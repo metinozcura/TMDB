@@ -1,4 +1,4 @@
-# TMDB — Project handover
+# TMDB
 
 ## What this project is
 
