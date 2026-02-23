@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_overview_available">No overview available.</string>
+    <string name="vote_average">Vote average</string>
+    <string name="vote_count">Vote count</string>
+    <string name="release_date">Release date</string>
+</resources>

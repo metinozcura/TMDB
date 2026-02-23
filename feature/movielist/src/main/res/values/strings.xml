@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter_sort">Filter &amp; Sort</string>
+    <string name="release_date">Release date</string>
+    <string name="no_results_message">No movies match your filters. Try changing your filter or sort options.</string>
+    <string name="change_filters">Change filters</string>
+</resources>

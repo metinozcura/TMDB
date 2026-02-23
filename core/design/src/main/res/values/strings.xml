@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="retry">Retry</string>
+    <string name="quit">Quit</string>
+    <string name="loading_failed">Loading failed</string>
+    <string name="error_unknown">Unknown error</string>
+    <string name="error_title">Error</string>
+    <string name="try_again">Try Again</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_no_network_title">No internet connection</string>
+    <string name="error_no_network_message">Please check your connection and try again.</string>
+    <string name="movies">Movies</string>
+    <string name="trending_movies">Trending Movies</string>
+    <string name="genre">Genre</string>
+    <string name="all">All</string>
+    <string name="sort">Sort</string>
+    <string name="popularity">Popularity</string>
+    <string name="title">Title</string>
+    <string name="order">Order</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+    <string name="no_results_title">No results</string>
+    <string name="no_results_message">No results found.</string>
+    <string name="no_results_button">Try again</string>
+    <string name="movie">Movie</string>
+    <string name="back">Back</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="runtime">Runtime</string>
+    <string name="budget">Budget</string>
+    <string name="revenue">Revenue</string>
+    <string name="status">Status</string>
+    <string name="imdb">IMDB</string>
+    <string name="open">Open</string>
+</resources>
