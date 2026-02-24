@@ -1,13 +1,17 @@
 package com.metinozcura.tmdb.splash.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.viewModelScope
 import com.metinozcura.tmdb.common.base.BaseViewModel
+import com.metinozcura.tmdb.common.util.isNoNetwork
 import com.metinozcura.tmdb.splash.usecase.GetConfigurationUseCase
 import com.metinozcura.tmdb.splash.usecase.GetGenresUseCase
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.supervisorScope
 
 class SplashViewModel(
     initialState: SplashState,
@@ -29,17 +33,30 @@ class SplashViewModel(
 
     private fun loadConfigurationAndGenres() {
         viewModelScope.launch {
-            val configDeferred = async {
-                getConfigurationUseCase(Unit).first()
+            try {
+                supervisorScope {
+                    val configDeferred = async {
+                        getConfigurationUseCase(Unit).first()
+                    }
+                    val genresDeferred = async {
+                        getGenresUseCase(Unit).first()
+                    }
+                    val configResult = configDeferred.await()
+                    val genresResult = genresDeferred.await()
+                    delay(700) // artificial delay to show splash screen
+                    sendIntent(SplashIntent.DataLoaded(configResult, genresResult))
+                }
+            } catch (e: Exception) {
+                val noNetwork = isNoNetwork(e)
+                val message = e.message?.takeIf { it.isNotBlank() } ?: e.javaClass.simpleName
+                Log.e(TAG, "Splash load failed: $message", e)
+                sendIntent(SplashIntent.DataLoadFailed(isNoNetwork = noNetwork, message = message))
             }
-            val genresDeferred = async {
-                getGenresUseCase(Unit).first()
-            }
-            val configResult = configDeferred.await()
-            val genresResult = genresDeferred.await()
-            delay(700) // artificial delay to show splash screen
-            sendIntent(SplashIntent.DataLoaded(configResult, genresResult))
         }
+    }
+
+    private companion object {
+        const val TAG = "SplashViewModel"
     }
 
     fun retry() = sendIntent(SplashIntent.Retry)

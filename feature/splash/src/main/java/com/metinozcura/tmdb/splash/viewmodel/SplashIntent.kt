@@ -9,6 +9,7 @@ import com.metinozcura.tmdb.splash.model.GenresData
 sealed class SplashIntent : Reducer.Intent {
     data object LoadData : SplashIntent()
     data class DataLoaded(val configurationData: ConfigurationData, val genres: GenresData) : SplashIntent()
+    data class DataLoadFailed(val isNoNetwork: Boolean, val message: String) : SplashIntent()
     data object Retry : SplashIntent()
     data object Quit : SplashIntent()
 }
