@@ -1,5 +1,9 @@
 # TMDB
 
+**Required IDE:** This project uses Android Gradle Plugin 9.0.1. Use **Android Studio Otter 3 Feature Drop | 2025.2.3** or **Panda 1 | 2025.3.1** (or newer) to open and run it.
+
+---
+
 ## What this project is
 
 This is an **Android application** that uses **The Movie Database (TMDB) API** to show trending movies. It was built as an assignment for an interview process.
