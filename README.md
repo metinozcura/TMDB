@@ -103,16 +103,15 @@ Features depend on `core:design` and `core:common`; they get data from the `data
 Below are thumbnails of the app screens. Click any image to open it at full size.
 
 <p align="center">
-  <a href="img/1.png"><img src="img/1.png" width="220" alt="Screenshot 1"></a>
-  <a href="img/2.png"><img src="img/2.png" width="220" alt="Screenshot 2"></a>
-  <a href="img/3.png"><img src="img/3.png" width="220" alt="Screenshot 3"></a>
-  <a href="img/4.png"><img src="img/4.png" width="220" alt="Screenshot 4"></a>
-  <a href="img/5.png"><img src="img/5.png" width="220" alt="Screenshot 5"></a>
+  <a href="img/2.png"><img src="img/2.png" width="220" alt="Screenshot 1"></a>
+  <a href="img/3.png"><img src="img/3.png" width="220" alt="Screenshot 2"></a>
+  <a href="img/4.png"><img src="img/4.png" width="220" alt="Screenshot 3"></a>
+  <a href="img/8.png"><img src="img/8.png" width="220" alt="Screenshot 4"></a>
+  <a href="img/9.png"><img src="img/9.png" width="220" alt="Screenshot 5"></a>
+  <a href="img/10.png"><img src="img/10.png" width="220" alt="Screenshot 6"></a>
 </p>
 <p align="center">
-  <a href="img/6.png"><img src="img/6.png" width="220" alt="Screenshot 6"></a>
-  <a href="img/7.png"><img src="img/7.png" width="220" alt="Screenshot 7"></a>
-  <a href="img/8.png"><img src="img/8.png" width="220" alt="Screenshot 8"></a>
-  <a href="img/9.png"><img src="img/9.png" width="220" alt="Screenshot 9"></a>
-  <a href="img/10.png"><img src="img/10.png" width="220" alt="Screenshot 10"></a>
+  <a href="img/5.png"><img src="img/5.png" width="330" alt="Screenshot 7"></a>
+  <a href="img/6.png"><img src="img/6.png" width="330" alt="Screenshot 8"></a>
+  <a href="img/7.png"><img src="img/7.png" width="330" alt="Screenshot 9"></a>
 </p>
